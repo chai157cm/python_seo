@@ -1,3 +1,5 @@
+# Check page for updates
+
 import requests
 
 url = 'yoururl'
