@@ -1,3 +1,5 @@
+# Extract external links from page
+
 import urllib
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
@@ -15,6 +17,6 @@ def getExt(url):
                 continue
             else:
                 ext.add(link.attrs['href'])
-getExt('https://www.reimorikawa.com/')
+getExt('yoururl')
 for i in ext:
     print(i)
