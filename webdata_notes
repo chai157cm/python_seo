@@ -1,7 +1,7 @@
 import urllib.request
 
 # Get http response code
-webUrl = urllib.request.urlopen("http://www.reimorikawa.com")
+webUrl = urllib.request.urlopen("yoururl")
 print(str(webUrl.getcode()))
 
 # Get html code
