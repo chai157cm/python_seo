@@ -1,0 +1,12 @@
+import urllib.request
+
+# Get http response code
+webUrl = urllib.request.urlopen("http://www.reimorikawa.com")
+print(str(webUrl.getcode()))
+
+# Get html code
+if (webUrl.getcode() == 200):
+  data = webUrl.read()
+  print(data)
+else:
+  print("Error code - cannot parse results")
